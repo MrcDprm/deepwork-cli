@@ -1,7 +1,7 @@
 {
-  "name": "todoapp",
+  "name": "deepwork-cli",
   "version": "1.0.0",
-  "description": "DeepWork CLI - Terminal tabanlı görev ve Pomodoro yöneticisi",
+  "description": "Geliştiriciler için terminal tabanlı, odaklanma (Pomodoro) ve görev yönetimi aracı.",
   "main": "dist/bin/dw.js",
   "bin": {
     "dw": "./dist/bin/dw.js"
@@ -11,8 +11,15 @@
     "dev": "ts-node src/bin/dw.ts",
     "start": "node dist/bin/dw.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "productivity",
+    "pomodoro",
+    "developer-tools",
+    "todo",
+    "sqlite"
+  ],
+  "author": "Miraç Deprem <mrcdprmm@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@inquirer/prompts": "^8.3.2",
