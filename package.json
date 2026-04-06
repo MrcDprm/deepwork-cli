@@ -1,10 +1,10 @@
 {
-  "name": "deepwork-cli",
+  "name": "@mrcdprm/deepwork-cli",
   "version": "1.0.0",
   "description": "Geliştiriciler için terminal tabanlı, odaklanma (Pomodoro) ve görev yönetimi aracı.",
   "main": "dist/bin/dw.js",
   "bin": {
-    "dw": "./dist/bin/dw.js"
+    "dw": "dist/bin/dw.js"
   },
   "scripts": {
     "build": "tsc",
@@ -21,6 +21,17 @@
   ],
   "author": "Miraç Deprem <mrcdprmm@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrcDprm/deepwork-cli.git"
+  },
+  "homepage": "https://github.com/MrcDprm/deepwork-cli#readme",
+  "bugs": {
+    "url": "https://github.com/MrcDprm/deepwork-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@inquirer/prompts": "^8.3.2",
     "better-sqlite3": "^12.8.0",
