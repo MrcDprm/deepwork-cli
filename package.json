@@ -1,0 +1,32 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "DeepWork CLI - Terminal tabanlı görev ve Pomodoro yöneticisi",
+  "main": "dist/bin/dw.js",
+  "bin": {
+    "dw": "./dist/bin/dw.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/bin/dw.ts",
+    "start": "node dist/bin/dw.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.2",
+    "better-sqlite3": "^12.8.0",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3",
+    "node-notifier": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.2",
+    "@types/node-notifier": "^8.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
