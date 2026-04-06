@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const pkg = JSON.parse(readFileSync(join(__dirname, '../../package.json'), 'utf-8')) as { version: string };
 import { runInit } from '../commands/init';
 import { runAdd } from '../commands/add';
 import { runRm } from '../commands/rm';
@@ -17,7 +21,7 @@ const program = new Command();
 program
   .name('dw')
   .description('DeepWork CLI - Terminal tabanlı görev ve Pomodoro yöneticisi')
-  .version('1.0.0');
+  .version(pkg.version);
 
 program
   .command('init')
