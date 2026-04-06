@@ -53,7 +53,7 @@ $ dw stat
 ## Kurulum
 
 ```bash
-npm install -g deepwork-cli
+npm install -g @mrcdprm/deepwork-cli
 ```
 
 İlk kurulumdan sonra veritabanını başlat:
@@ -203,7 +203,7 @@ Tüm veriler `~/.deepwork/data.db` dosyasında yerel olarak saklanır. Başka bi
 Pull request'ler açıktır. Büyük değişiklikler için lütfen önce bir issue açın.
 
 ```bash
-git clone https://github.com/kullanici-adi/deepwork-cli.git
+git clone https://github.com/MrcDprm/deepwork-cli.git
 cd deepwork-cli
 npm install
 npm run build
@@ -214,4 +214,4 @@ node dist/bin/dw.js --help
 
 ## Lisans
 
-[MIT](LICENSE) © Adın Soyadın
+[MIT](LICENSE) © Miraç Deprem
